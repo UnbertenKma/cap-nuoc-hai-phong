@@ -1,7 +1,10 @@
 import React from "react";
 import { Row, Col, Divider } from "antd";
+import { Link, useNavigate } from "react-router-dom";
 
 const FooterContent = () => {
+  const navigate = useNavigate();
+
   return (
     <>
       <Divider />
@@ -38,27 +41,67 @@ const FooterContent = () => {
           <div className="mb-[36px] text-sky-800 text-base font-bold">
             Tra cứu thông tin
           </div>
-          <Row className="text-zinc-500">Lịch tạm ngưng cấp nước</Row>
-          <Row className="text-zinc-500">Tra cứu sử dụng nước</Row>
-          <Row className="text-zinc-500">Lịch ghi chỉ số công tơ</Row>
-          <Row className="text-zinc-500">Lượng nước tiêu thụ</Row>
+          <Row className="text-zinc-500">
+            <Link to="san-pham-va-dich-vu/lich-tam-ngung-cap-nuoc">
+              Lịch tạm ngưng cấp nước
+            </Link>
+          </Row>
+          <Row className="text-zinc-500">
+            <Link to="/cham-soc-khach-hang/tra-cuu-thong-tin/tra-cuu-chi-so-cong-to">
+              Tra cứu sử dụng nước
+            </Link>
+          </Row>
+          <Row className="text-zinc-500">
+            <Link to="/cham-soc-khach-hang/tra-cuu-thong-tin/lich-ghi-chi-so-cong-to">
+              Lịch ghi chỉ số công tơ
+            </Link>
+          </Row>
+          <Row className="text-zinc-500">
+            <Link to="/cham-soc-khach-hang/tra-cuu-thong-tin/luong-nuoc-tieu-thu">
+              Lượng nước tiêu thụ
+            </Link>
+          </Row>
         </Col>
         <Col>
           <div className="mb-[36px] text-sky-800 text-base font-bold">
             Tra cứu thông tin
           </div>
-          <Row className="text-zinc-500">Hóa đơn tiền nước</Row>
-          <Row className="text-zinc-500">Thanh toán trực tuyến</Row>
-          <Row className="text-zinc-500">Thanh toán tại điểm thu tiền nước</Row>
-          <Row className="text-zinc-500">Lịch sử thanh toán</Row>
+          <Row className="text-zinc-500">
+            <Link to="san-pham-va-dich-vu/dich-vu/hoa-don-dien-tu">
+              Hóa đơn tiền nước
+            </Link>
+          </Row>
+          <Row className="text-zinc-500">
+            <Link to="san-pham-va-dich-vu/dich-vu/thanh-toan-truc-tuyen">
+              Thanh toán trực tuyến
+            </Link>
+          </Row>
+          <Row className="text-zinc-500">
+            <Link to="">Thanh toán tại điểm thu tiền nước</Link>
+          </Row>
+          <Row className="text-zinc-500">
+            <Link to="">Lịch sử thanh toán</Link>
+          </Row>
         </Col>
         <Col>
           <div className="mb-[36px] text-sky-800 text-base font-bold">
             Chính sách và quy định
           </div>
-          <Row className="text-zinc-500">Chính sách thanh toán</Row>
-          <Row className="text-zinc-500">Chính sách xử lý khiếu nại</Row>
-          <Row className="text-zinc-500">Chính sách bảo mật thông tin</Row>
+          <Row className="text-zinc-500">
+            <Link to="cham-soc-khach-hang/chinh-sach-chung">
+              Chính sách thanh toán
+            </Link>
+          </Row>
+          <Row className="text-zinc-500">
+            <Link to="cham-soc-khach-hang/chinh-sach-chung">
+              Chính sách xử lý khiếu nại
+            </Link>
+          </Row>
+          <Row className="text-zinc-500">
+            <Link to="cham-soc-khach-hang/chinh-sach-bao-mat">
+              Chính sách bảo mật thông tin
+            </Link>
+          </Row>
         </Col>
       </Row>
       <Divider />

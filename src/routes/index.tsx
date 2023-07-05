@@ -34,6 +34,15 @@ import DangVaDoanThe from "../pages/News/DangVaDoanThe";
 import TinTucLienQuan from "../pages/News/TinTucLienQuan";
 import ChatLuongNuoc from "../pages/Quality/ChatLuongNuoc";
 import LienHe from "../pages/Contact/LienHe";
+import LapDatMoi from "../pages/Service/DichVu/LapDatMoi";
+import TraCuuSuDungNuoc from "../pages/Service/DichVu/TraCuuSuDungNuoc";
+import HoaDonDienTu from "../pages/Service/DichVu/HoaDonDienTu";
+import ThanhToanTrucTuyen from "../pages/Service/DichVu/ThanhToanTrucTuyen";
+import SuaChua from "../pages/Service/DichVu/SuaChua";
+import LapDatDiChuyen from "../pages/Service/DichVu/LapDatDiChuyen";
+import SangTenHopDongDVCN from "../pages/Service/DichVu/SangTenHopDongDVCN";
+import CapLaiHopDongDVCN from "../pages/Service/DichVu/CapLaiHopDongDVCN";
+import DangKyThayDoi from "../pages/Service/DichVu/DangKyThayDoi";
 
 function Router() {
   return (
@@ -80,7 +89,6 @@ function Router() {
                 path="lich-tam-ngung-cap-nuoc"
                 element={<LichTamNgungCapNuoc />}
               />
-              <Route path="dich-vu" element={<DichVu />} />
               <Route
                 path="cong-cu-tinh-hoa-don/phu-hop-nhat"
                 element={<PhuHopNhat />}
@@ -92,6 +100,37 @@ function Router() {
               <Route
                 path="cong-cu-tinh-hoa-don/gia-tu-thap-den-cao"
                 element={<GiaTuThapDenCao />}
+              />
+              <Route path="dich-vu" element={<DichVu />} />
+              <Route path="dich-vu/lap-dat-moi" element={<LapDatMoi />} />
+              <Route
+                path="dich-vu/tra-cuu-su-dung-nuoc"
+                element={<TraCuuSuDungNuoc />}
+              />
+              <Route
+                path="dich-vu/hoa-don-dien-tu"
+                element={<HoaDonDienTu />}
+              />
+              <Route
+                path="dich-vu/thanh-toan-truc-tuyen"
+                element={<ThanhToanTrucTuyen />}
+              />
+              <Route path="dich-vu/sua-chua" element={<SuaChua />} />
+              <Route
+                path="dich-vu/lap-dat-di-chuyen"
+                element={<LapDatDiChuyen />}
+              />
+              <Route
+                path="dich-vu/sang-ten-hop-dong-dvcn"
+                element={<SangTenHopDongDVCN />}
+              />
+              <Route
+                path="dich-vu/cap-lai-hop-dong-dvcn"
+                element={<CapLaiHopDongDVCN />}
+              />
+              <Route
+                path="dich-vu/dang-ky-thay-doi-TTKH"
+                element={<DangKyThayDoi />}
               />
             </Route>
             <Route path="cham-soc-khach-hang" element={<ContentLayout />}>
