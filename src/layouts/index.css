@@ -1,0 +1,16 @@
+.sider-menu .ant-menu-item:hover:not(.ant-menu-item-selected):not(.ant-menu-submenu-selected){
+  color: white;
+}
+
+.sider-menu .ant-menu-submenu-title:hover{
+  color: white !important;
+}
+
+.sider-menu .ant-menu-item-selected{
+  color: white;
+  background-color: #2563EB;
+}
+
+.sider-menu .ant-menu-submenu-selected >.ant-menu-submenu-title{
+  color: white !important;
+}
