@@ -1,0 +1,44 @@
+@mixin flex($direction: row, $justify: space-between, $align: flex-start, $display: flex) {
+    display: $display;
+
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+.item {
+    @include flex($justify: flex-start);
+}
+
+.left {
+    padding-right: 30px;
+}
+.right {
+    @include flex(column, flex-start);
+}
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+.title {
+    color: #fff;
+    font-size: 20px !important;
+    font-weight: 700;
+    padding: 30px;
+    background-color: #154398;
+    :global(.ant-divider) {
+        background-color: #7F96C1;
+		border-block-start: 2px solid rgba(5, 5, 5, 0.06);
+    }
+	h3{
+		color: #fff;
+	}
+}
+.card {
+    background: #f9f9f9;
+    max-width: 355px;
+	height: fit-content;
+}
+.card-content {
+    padding: 30px;
+}
