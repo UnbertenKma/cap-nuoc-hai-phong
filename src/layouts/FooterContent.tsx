@@ -6,7 +6,7 @@ const FooterContent = () => {
   const navigate = useNavigate();
 
   return (
-    <div className="m-[-50px] bg-white px-56">
+    <div className="m-[-50px] bg-white">
       <Row className="flex justify-between align-middle">
         <Col>
           <div className="mb-[36px] text-sky-800 text-base font-bold">

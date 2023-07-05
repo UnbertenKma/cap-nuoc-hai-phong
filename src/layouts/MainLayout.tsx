@@ -14,10 +14,10 @@ function MainLayout() {
   const navigate = useNavigate();
 
   return (
-    <Layout className="min-h-screen m-auto bg-white">
+    <Layout className="min-h-screen m-auto bg-white px-56">
       <TopBar />
       <Divider className="px-[50px]" />
-      <Header className="flex items-center justify-between bg-white border-b-[1px] z-1000 sticky top-0 z-10 px-56">
+      <Header className="flex items-center justify-between bg-white border-b-[1px] z-1000 sticky top-0 z-10 ">
         <Link
           to="/"
           className="flex items-center gap-3 text-base font-bold text-sky-800"
