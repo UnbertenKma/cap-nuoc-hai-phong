@@ -29,7 +29,10 @@ function MainLayout() {
         <Menu mode="horizontal" defaultSelectedKeys={["1"]} disabledOverflow>
           <Menu.Item className=" text-base font-semibold pr-[10px] pb-[25px] pl-[10px]">
             <Link to="/">
-              <FontAwesomeIcon icon={["fas", "house"]} color="red" />
+              <FontAwesomeIcon
+                icon={["fas", "house"]}
+                className="text-sky-800"
+              />
             </Link>
           </Menu.Item>
           <Menu.SubMenu
