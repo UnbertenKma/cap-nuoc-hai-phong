@@ -6,8 +6,7 @@ const FooterContent = () => {
   const navigate = useNavigate();
 
   return (
-    <>
-      <Divider />
+    <div className="m-[-50px] bg-white px-56">
       <Row className="flex justify-between align-middle">
         <Col>
           <div className="mb-[36px] text-sky-800 text-base font-bold">
@@ -120,7 +119,7 @@ const FooterContent = () => {
           lần 9)
         </div>
       </Row>
-    </>
+    </div>
   );
 };
 

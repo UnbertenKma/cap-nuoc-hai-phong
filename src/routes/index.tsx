@@ -7,7 +7,6 @@ import ThuNgo from "../pages/About/VeCapNuocHaiPhong/ThuNgo";
 import LichSuPhatTrien from "../pages/About/VeCapNuocHaiPhong/LichSuPhatTrien";
 import CacLinhVucKinhDoanh from "../pages/About/VeCapNuocHaiPhong/CacLinhVucKinhDoanh";
 import SoDoToChuc from "../pages/About/SoDoToChuc";
-import ThongDiepLanhDao from "../pages/About/ThongDiepLanhDao";
 import NuocSinhHoat from "../pages/Service/Product/NuocSinhHoat";
 import NuocUongDongChai from "../pages/Service/Product/NuocUongDongChai";
 import ChinhSachBaoMat from "../pages/Service/Product/ChinhSachBaoMat";
@@ -43,6 +42,9 @@ import LapDatDiChuyen from "../pages/Service/DichVu/LapDatDiChuyen";
 import SangTenHopDongDVCN from "../pages/Service/DichVu/SangTenHopDongDVCN";
 import CapLaiHopDongDVCN from "../pages/Service/DichVu/CapLaiHopDongDVCN";
 import DangKyThayDoi from "../pages/Service/DichVu/DangKyThayDoi";
+import GiaTriCotLoi from "../pages/About/ThongDiepLanhDao/GiaTriCotLoi";
+import ChuanMucDaoDuc from "../pages/About/ThongDiepLanhDao/ChuanMucDaoDuc";
+import ThucThiVanHoa from "../pages/About/ThongDiepLanhDao/ThucThiVanHoa";
 
 function Router() {
   return (
@@ -67,8 +69,16 @@ function Router() {
                 element={<CacLinhVucKinhDoanh />}
               />
               <Route
-                path="thong-diep-lanh-dao"
-                element={<ThongDiepLanhDao />}
+                path="thong-diep-lanh-dao/gia-tri-cot-loi"
+                element={<GiaTriCotLoi />}
+              />
+              <Route
+                path="thong-diep-lanh-dao/chuan-muc-dao-duc"
+                element={<ChuanMucDaoDuc />}
+              />
+              <Route
+                path="thong-diep-lanh-dao/thuc-thi-van-hoa"
+                element={<ThucThiVanHoa />}
               />
               <Route path="so-do-to-chuc" element={<SoDoToChuc />} />
             </Route>

@@ -14,10 +14,10 @@ function MainLayout() {
   const navigate = useNavigate();
 
   return (
-    <Layout className="max-w-[1400px] m-auto min-h-screen bg-white  ">
+    <Layout className="min-h-screen m-auto bg-white">
       <TopBar />
       <Divider className="px-[50px]" />
-      <Header className="flex items-center justify-between bg-white sticky top-[0] mt-[-15px] border-b-[1px]">
+      <Header className="flex items-center justify-between bg-white border-b-[1px] z-1000 sticky top-0 z-10 px-56">
         <Link
           to="/"
           className="flex items-center gap-3 text-base font-bold text-sky-800"
@@ -66,13 +66,29 @@ function MainLayout() {
                 Các lĩnh vực kinh doanh
               </Menu.Item>
             </Menu.SubMenu>
-            <Menu.Item
-              onClick={() => {
-                navigate("/gioi-thieu/thong-diep-lanh-dao");
-              }}
-            >
-              Thông điệp lãnh đạo
-            </Menu.Item>
+            <Menu.SubMenu title="Thông điệp lãnh đạo">
+              <Menu.Item
+                onClick={() => {
+                  navigate("/gioi-thieu/thong-diep-lanh-dao/gia-tri-cot-loi");
+                }}
+              >
+                Giá trị cốt lõi
+              </Menu.Item>
+              <Menu.Item
+                onClick={() => {
+                  navigate("/gioi-thieu/thong-diep-lanh-dao/chuan-muc-dao-duc");
+                }}
+              >
+                Chuẩn mực đạo đức
+              </Menu.Item>
+              <Menu.Item
+                onClick={() => {
+                  navigate("/gioi-thieu/thong-diep-lanh-dao/thuc-thi-van-hoa");
+                }}
+              >
+                Thực thi văn hóa
+              </Menu.Item>
+            </Menu.SubMenu>
             <Menu.Item
               onClick={() => {
                 navigate("/gioi-thieu/so-do-to-chuc");
@@ -318,9 +334,10 @@ function MainLayout() {
           </Menu.Item>
         </Menu>
       </Header>
-      <Content className="bg-white p-[50px]">
+      <Content className="bg-white">
         <ContentLayout />
       </Content>
+      <Divider />
       <Footer className="bg-white">
         <FooterContent />
       </Footer>
