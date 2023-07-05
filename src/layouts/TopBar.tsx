@@ -4,7 +4,7 @@ import { LinkOutlined, UserAddOutlined } from "@ant-design/icons";
 
 const TopBar = () => {
   return (
-    <div className="px-[50px] pt-1 mb-[-20px] ">
+    <div className="px-56 pt-1 mb-[-20px]">
       <Row justify="space-between" align="middle">
         <Col>
           <FontAwesomeIcon icon={["fas", "phone"]} />{" "}

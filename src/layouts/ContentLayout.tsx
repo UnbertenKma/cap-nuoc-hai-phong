@@ -3,7 +3,7 @@ import { Outlet } from "react-router-dom";
 
 function ContentLayout() {
   return (
-    <div className="bg-white max-w-[1440px]">
+    <div className="bg-white">
       <Outlet />
     </div>
   );

@@ -1,11 +1,20 @@
 import "./App.css";
 import Router from "./routes";
+import { ConfigProvider } from "antd";
 
 function App() {
   return (
-    <div className="bg-white">
-      <Router />
-    </div>
+    <ConfigProvider
+      theme={{
+        token: {
+          colorPrimary: "#154398",
+        },
+      }}
+    >
+      <div className="bg-white">
+        <Router />
+      </div>
+    </ConfigProvider>
   );
 }
 
