@@ -1,10 +1,15 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Row, Col, Button } from "antd";
-import { LinkOutlined, UserAddOutlined } from "@ant-design/icons";
+import {
+  LinkOutlined,
+  DownloadOutlined,
+  ShoppingCartOutlined,
+  SearchOutlined,
+} from "@ant-design/icons";
 
 const TopBar = () => {
   return (
-    <div className="pt-1 mb-[-20px]">
+    <div className="pt-1 mb-[-20px] px-72">
       <Row justify="space-between" align="middle">
         <Col>
           <FontAwesomeIcon icon={["fas", "phone"]} />{" "}
@@ -17,6 +22,16 @@ const TopBar = () => {
         <Col>
           <Row gutter={25} align="middle">
             <Col>
+              <Row>
+                <SearchOutlined className="text-lg text-[#154398]" />
+              </Row>
+            </Col>
+            <Col>
+              <Row>
+                <ShoppingCartOutlined className="text-lg text-[#154398]" />
+              </Row>
+            </Col>
+            <Col>
               <Row justify="space-between" align="middle">
                 <LinkOutlined />
                 <span className="text-zinc-400 font-bold text-sm">
@@ -26,9 +41,9 @@ const TopBar = () => {
             </Col>
             <Col>
               <Row justify="space-between" align="middle">
-                <UserAddOutlined />
+                <DownloadOutlined />
                 <span className="text-zinc-400 font-bold text-sm">
-                  &nbsp;Đăng ký
+                  &nbsp;Tải ứng dụng
                 </span>
               </Row>
             </Col>
