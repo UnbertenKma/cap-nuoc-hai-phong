@@ -9,7 +9,7 @@ export const Title = styled.h1`
     font-size: 22px;
     font-weight: 600;
     color: #154398;
-    margin-top: 30px;
+    margin: 30px 10px 10px -2px;
 `
 
 export const ValueTile = styled.div`
@@ -27,4 +27,21 @@ export const ValueTile = styled.div`
     color: rgb(255, 255, 255);
     font-weight: 600;
     padding-top: 2px;
+`
+
+export const TitleText = styled.div`
+    margin: 0 0 0 10px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #154398;
+`
+
+export const TextDetail = styled.div`
+     font-Weight: 300; 
+     font-Size: 14px;
+     position: relative;
+`
+export const WrapperValue = styled.div`
+    display: flex;
+    margin-bottom: 10px;
 `

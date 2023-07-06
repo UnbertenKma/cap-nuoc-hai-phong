@@ -1,15 +1,9 @@
 import React from 'react'
-import {WapperContent, Title, ValueTile} from './style';
+import {WapperContent, Title, ValueTile, TitleText, TextDetail, WrapperValue} from './style';
 import { Col, Divider, Row } from 'antd';
 import img1 from '../../../images/giatricoitloiimg1.png';
 import img2 from '../../../images/giatricoitloiimg2.png';
 import img3 from '../../../images/giatricoitloiimg3.png';
-import { Card } from 'antd';
-
-const style = {
-    background: '#fff',
-    padding: '8px 0',
-};
 
 const GiaTriCotLoi = () => {
   return (
@@ -46,7 +40,7 @@ const GiaTriCotLoi = () => {
             <Title>Sứ mệnh</Title>
             
             <Divider />
-            <div style={{fontWeight: 300, fontSize: '14px', position: 'relative'}}>
+            <TextDetail>
                 Đảm bảo đáp ứng đủ nhu cầu nước phục vụ sản xuất, phát triển kinh tế và sinh hoạt của người dân. Vận hành cung ứng nước sạch, ổn định, đặc biệt là cung cấp nước an toàn tuyệt đối cho mọi người dân. Kinh doanh có hiệu quả, với chất lượng và dịch vụ tốt nhất.
                 <div style={{position: 'absolute', top: '230px', left: '60px'}}>
                     <h1 style={{fontWeight: 600, fontSize: '48px', color: '#154398'}}>
@@ -57,7 +51,7 @@ const GiaTriCotLoi = () => {
                         Chuyên nghiệp - Văn minh - Hiệu quả
                     </h1>
                 </div>
-            </div>
+            </TextDetail>
 
             <Title>Khẩu hiệu</Title>
             <Divider />
@@ -70,70 +64,58 @@ const GiaTriCotLoi = () => {
 
             <Row gutter={[16, 24]}>
                 <Col className="gutter-row" span={8}>
-                    <div style={style}>
                         <div>
-                            <div style={{display: 'flex'}}> 
+                            <WrapperValue> 
                                 <ValueTile>1</ValueTile>
-                                <Title style={{margin: '-2px 0 10px 10px'}}>Chuyên</Title>
-                            </div>
+                                <TitleText>Chuyên</TitleText>
+                            </WrapperValue>
                             <span>Chuyên là chuyên nghiệp, biểu hiện ở tác phong làm việc, thái độ tập trung, chuyên môn thành thạo, tuân thủ chuẩn mực nghề nghiệp.</span>
                         </div>
-                    </div>
                 </Col>
                 <Col className="gutter-row" span={8}>
-                    <div style={style}>
                         <div>
-                            <div style={{display: 'flex'}}> 
+                            <WrapperValue> 
                                 <ValueTile>1</ValueTile>
-                                <Title style={{margin: '-2px 0 10px 10px'}}>Tâm</Title>
-                            </div>
+                                <TitleText>Tâm</TitleText>
+                            </WrapperValue>
                             <span>Hợp là sự hợp lực, hợp tác, hòa hợp, biết gắn kết, liên kết tạo nên tinh thần đồng đội và sức mạnh tập thể.</span>
                         </div>
-                    </div>
                 </Col>
                 <Col className="gutter-row" span={8}>
-                    <div style={style}>
                         <div>
-                            <div style={{display: 'flex'}}> 
+                            <WrapperValue> 
                                 <ValueTile>1</ValueTile>
-                                <Title style={{margin: '-2px 0 10px 10px'}}>Hợp</Title>
-                            </div>
+                                <TitleText>Hợp</TitleText>
+                            </WrapperValue>
                             <span>Hợp là sự hợp lực, hợp tác, hòa hợp, biết gắn kết, liên kết tạo nên tinh thần đồng đội và sức mạnh tập thể.</span>
                         </div>
-                    </div>
                 </Col>
                 <Col className="gutter-row" span={8}>
-                    <div style={style}>
                         <div>
-                            <div style={{display: 'flex'}}> 
+                            <WrapperValue> 
                                 <ValueTile>1</ValueTile>
-                                <Title style={{margin: '-2px 0 10px 10px'}}>Chất</Title>
-                            </div>
+                                <TitleText>Chất</TitleText>
+                            </WrapperValue>
                             <span>Chất là chất lượng, biểu hiện bằng sự hài lòng của các bên liên quan khi giao dịch, sử dụng sản phẩm, dịch vụ của Cấp nước Hải Phòng.</span>
                         </div>
-                    </div>
                 </Col>
                 <Col className="gutter-row" span={8}>
-                    <div style={style}>
                         <div>
-                            <div style={{display: 'flex'}}> 
+                            <WrapperValue> 
                                 <ValueTile>1</ValueTile>
-                                <Title style={{margin: '-2px 0 10px 10px'}}>Mới</Title>
-                            </div>
+                                <TitleText>Mới</TitleText>
+                            </WrapperValue>
                             <span>Mới là sự đổi mới, là tư duy sáng tạo, thúc đẩy sáng kiến trên cơ sở mang lại giá trị, lợi ích cho khách hàng và cộng đồng.</span>
                         </div>
-                    </div>
                 </Col>
                 <Col className="gutter-row" span={8}>
-                    <div style={style}>
                         <div>
-                            <div style={{display: 'flex'}}> 
+                            <WrapperValue> 
                                 <ValueTile>1</ValueTile>
-                                <Title style={{margin: '-2px 0 10px 10px'}}>Bền</Title>
-                            </div>
+                                <TitleText>Bền</TitleText>
+                            </WrapperValue>
                             <span>Bền là tính bền vững, luôn tiếp cận các vấn đề và hành động vì mục tiêu lâu dài, sẵn sàng hy sinh lợi ích trước mắt vì những giá trị bền lâu.</span>
                         </div>
-                    </div>
                 </Col>
             </Row>
         </WapperContent>
