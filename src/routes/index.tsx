@@ -42,9 +42,10 @@ import LapDatDiChuyen from "../pages/Service/DichVu/LapDatDiChuyen";
 import SangTenHopDongDVCN from "../pages/Service/DichVu/SangTenHopDongDVCN";
 import CapLaiHopDongDVCN from "../pages/Service/DichVu/CapLaiHopDongDVCN";
 import DangKyThayDoi from "../pages/Service/DichVu/DangKyThayDoi";
-import ChuanMucDaoDuc from "../pages/About/ThongDiepLanhDao/ChuanMucDaoDuc";
+import { ChuamMucDaoDuc } from "../pages/About/ThongDiepLanhDao/ChuamMucDaoDuc";
 import ThucThiVanHoa from "../pages/About/ThongDiepLanhDao/ThucThiVanHoa";
 import GiaTriCotLoi from "../pages/About/ThongDiepLanhDao/GiaTriCotLoi";
+
 
 function Router() {
   return (
@@ -74,7 +75,7 @@ function Router() {
               />
               <Route
                 path="thong-diep-lanh-dao/chuan-muc-dao-duc"
-                element={<ChuanMucDaoDuc />}
+                element={<ChuamMucDaoDuc />}
               />
               <Route
                 path="thong-diep-lanh-dao/thuc-thi-van-hoa"

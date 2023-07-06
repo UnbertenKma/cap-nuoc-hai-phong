@@ -44,4 +44,10 @@ export const TextDetail = styled.div`
 export const WrapperValue = styled.div`
     display: flex;
     margin-bottom: 10px;
+    margin-right: 10px;
+`
+
+//Css chuan muc dao duc
+export const Content = styled.div`
+    margin-top: 0;
 `
