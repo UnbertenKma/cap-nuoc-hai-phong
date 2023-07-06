@@ -42,9 +42,9 @@ import LapDatDiChuyen from "../pages/Service/DichVu/LapDatDiChuyen";
 import SangTenHopDongDVCN from "../pages/Service/DichVu/SangTenHopDongDVCN";
 import CapLaiHopDongDVCN from "../pages/Service/DichVu/CapLaiHopDongDVCN";
 import DangKyThayDoi from "../pages/Service/DichVu/DangKyThayDoi";
-import GiaTriCotLoi from "../pages/About/ThongDiepLanhDao/GiaTriCotLoi";
 import ChuanMucDaoDuc from "../pages/About/ThongDiepLanhDao/ChuanMucDaoDuc";
 import ThucThiVanHoa from "../pages/About/ThongDiepLanhDao/ThucThiVanHoa";
+import GiaTriCotLoi from "../pages/About/ThongDiepLanhDao/GiaTriCotLoi";
 
 function Router() {
   return (
