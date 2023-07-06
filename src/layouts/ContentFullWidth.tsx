@@ -1,12 +1,12 @@
 import React from "react";
 import { Outlet } from "react-router-dom";
 
-function ContentLayout() {
+function ContentFullWidth() {
   return (
-    <div className="bg-white px-72">
+    <div className="bg-white">
       <Outlet />
     </div>
   );
 }
 
-export default ContentLayout;
+export default ContentFullWidth;
