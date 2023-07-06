@@ -6,7 +6,6 @@ import Home from "../pages/Home/Home";
 import ThuNgo from "../pages/About/VeCapNuocHaiPhong/ThuNgo";
 import LichSuPhatTrien from "../pages/About/VeCapNuocHaiPhong/LichSuPhatTrien";
 import CacLinhVucKinhDoanh from "../pages/About/VeCapNuocHaiPhong/CacLinhVucKinhDoanh";
-import SoDoToChuc from "../pages/About/SoDoToChuc";
 import NuocSinhHoat from "../pages/Service/Product/NuocSinhHoat";
 import NuocUongDongChai from "../pages/Service/Product/NuocUongDongChai";
 import ChinhSachBaoMat from "../pages/Service/Product/ChinhSachBaoMat";
@@ -45,6 +44,7 @@ import DangKyThayDoi from "../pages/Service/DichVu/DangKyThayDoi";
 import { ChuamMucDaoDuc } from "../pages/About/ThongDiepLanhDao/ChuamMucDaoDuc";
 import ThucThiVanHoa from "../pages/About/ThongDiepLanhDao/ThucThiVanHoa";
 import GiaTriCotLoi from "../pages/About/ThongDiepLanhDao/GiaTriCotLoi";
+import SoDoToChuc from "../pages/About/SoDoToChuc";
 
 
 function Router() {
@@ -81,7 +81,7 @@ function Router() {
                 path="thong-diep-lanh-dao/thuc-thi-van-hoa"
                 element={<ThucThiVanHoa />}
               />
-              <Route path="so-do-to-chuc" element={<SoDoToChuc />} />
+              <Route path="so-do-to-chuc" element={<SoDoToChuc/>} />
             </Route>
             <Route path="san-pham-va-dich-vu" element={<ContentLayout />}>
               <Route
