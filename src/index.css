@@ -40,3 +40,9 @@ code {
   z-index: 2;
   color: white;
 }
+
+.ant-card-head-title {
+  font-size: 22px;
+  font-weight: 600;
+  color: #154398;
+}

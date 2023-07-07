@@ -75,7 +75,7 @@ const GiaTriCotLoi = () => {
                 <Col className="gutter-row" span={8}>
                         <div>
                             <WrapperValue> 
-                                <ValueTile>1</ValueTile>
+                                <ValueTile>2</ValueTile>
                                 <TitleText>Tâm</TitleText>
                             </WrapperValue>
                             <span>Hợp là sự hợp lực, hợp tác, hòa hợp, biết gắn kết, liên kết tạo nên tinh thần đồng đội và sức mạnh tập thể.</span>
@@ -84,7 +84,7 @@ const GiaTriCotLoi = () => {
                 <Col className="gutter-row" span={8}>
                         <div>
                             <WrapperValue> 
-                                <ValueTile>1</ValueTile>
+                                <ValueTile>3</ValueTile>
                                 <TitleText>Hợp</TitleText>
                             </WrapperValue>
                             <span>Hợp là sự hợp lực, hợp tác, hòa hợp, biết gắn kết, liên kết tạo nên tinh thần đồng đội và sức mạnh tập thể.</span>
@@ -93,7 +93,7 @@ const GiaTriCotLoi = () => {
                 <Col className="gutter-row" span={8}>
                         <div>
                             <WrapperValue> 
-                                <ValueTile>1</ValueTile>
+                                <ValueTile>4</ValueTile>
                                 <TitleText>Chất</TitleText>
                             </WrapperValue>
                             <span>Chất là chất lượng, biểu hiện bằng sự hài lòng của các bên liên quan khi giao dịch, sử dụng sản phẩm, dịch vụ của Cấp nước Hải Phòng.</span>
@@ -102,7 +102,7 @@ const GiaTriCotLoi = () => {
                 <Col className="gutter-row" span={8}>
                         <div>
                             <WrapperValue> 
-                                <ValueTile>1</ValueTile>
+                                <ValueTile>5</ValueTile>
                                 <TitleText>Mới</TitleText>
                             </WrapperValue>
                             <span>Mới là sự đổi mới, là tư duy sáng tạo, thúc đẩy sáng kiến trên cơ sở mang lại giá trị, lợi ích cho khách hàng và cộng đồng.</span>
@@ -111,7 +111,7 @@ const GiaTriCotLoi = () => {
                 <Col className="gutter-row" span={8}>
                         <div>
                             <WrapperValue> 
-                                <ValueTile>1</ValueTile>
+                                <ValueTile>6</ValueTile>
                                 <TitleText>Bền</TitleText>
                             </WrapperValue>
                             <span>Bền là tính bền vững, luôn tiếp cận các vấn đề và hành động vì mục tiêu lâu dài, sẵn sàng hy sinh lợi ích trước mắt vì những giá trị bền lâu.</span>
