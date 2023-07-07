@@ -34,3 +34,44 @@ export const WapperImage = styled.div`
     margin-top: 30px;
     width: 100%;
 `
+
+//cac linh vuc kinh doanh
+export const WrapperBusiness = styled.div`
+    width: 100%;
+    margin-top: 100px;
+    position: relative;
+`
+export const TitleBusiness = styled.div`
+    position: absolute;
+    color: #fff;
+    top: 10px;
+    width: 100%;
+
+    h1 {
+        font-weight: 600;
+        font-size: 24px;
+        margin: 40px 0 20px 50px;
+        color: #FFFFFF;
+    }
+`
+export const ContentBusiness = styled.div`
+    position: absolute;
+    top: 150px;
+    width: 100%;
+
+    p {
+        margin-left: 8px;
+        font-size: 18px;
+        font-weight: 500;
+        color: #FFFFFF;
+    }
+`
+
+export const IconText = styled.div`
+    background-color: #1BBE93;
+    height: 8px;
+    width: 8px;
+    margin-top: 10px;
+    margin-left: 20px;
+    border-radius: 50%;
+`  
