@@ -21,7 +21,7 @@ const ThuNgo = () => {
       >
         <ImageContent src={img1}></ImageContent>
         <Title>
-          <span>Kính thưa quý khách hàng !</span>
+          <span style={{fontSize: '16px', fontWeight: 600}}>Kính thưa quý khách hàng !</span>
           <img src={img2}></img>
            </Title>
         <Row 
