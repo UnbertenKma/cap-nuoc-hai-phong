@@ -1,5 +1,5 @@
 import React from "react";
-import { Card, Row, Divider, Image, Typography, Space } from "antd";
+import { Card, Row, Divider, Image, Typography, Space, Carousel } from "antd";
 import lapDatMoi from "../../images/lap-dat-moi.png";
 import traCuu from "../../images/tra-cuu-su-dung-nuoc.png";
 import hoaDonDienTu from "../../images/hoa-don-dien-tu.png";
@@ -7,13 +7,20 @@ import lichTamNgungCapNuoc from "../../images/lich-tam-ngung-cap-nuoc.png";
 import thanhToanTrucTuyen from "../../images/thanh-toan-truc-tuyen.png";
 import suaChua from "../../images/sua-chua.png";
 import { useNavigate } from "react-router-dom";
+import { LeftOutlined, RightOutlined } from "@ant-design/icons";
 
 const Service = () => {
   const navigate = useNavigate();
 
   return (
-    <>
-      <Row align="middle" justify="center">
+    <div className="home-service px-72">
+      <Carousel
+        arrows={true}
+        prevArrow={<LeftOutlined />}
+        nextArrow={<RightOutlined />}
+        dots={false}
+        slidesToShow={6}
+      >
         <Card
           className="rounded-none w-[188px] h-[220px] flex items-center justify-center cursor-pointer"
           onClick={() => navigate("san-pham-va-dich-vu/dich-vu/lap-dat-moi")}
@@ -138,9 +145,65 @@ const Service = () => {
             </Row>
           </Space>
         </Card>
-      </Row>
-      <Divider className="mt-0" />
-    </>
+        <Card
+          className="rounded-none w-[188px] h-[220px] flex items-center justify-center cursor-pointer"
+          onClick={() => navigate("san-pham-va-dich-vu/dich-vu/sua-chua")}
+        >
+          <Space
+            direction="vertical"
+            size="large"
+            className="flex items-center h-[170px]"
+          >
+            <Row>
+              <Image preview={false} src={suaChua} />
+            </Row>
+            <Row>
+              <Typography.Text className="text-base font-semibold text-[#154398] text-center">
+                Đăng ký thay đổi thông tin khách hàng
+              </Typography.Text>
+            </Row>
+          </Space>
+        </Card>
+        <Card
+          className="rounded-none w-[188px] h-[220px] flex items-center justify-center cursor-pointer"
+          onClick={() => navigate("san-pham-va-dich-vu/dich-vu/sua-chua")}
+        >
+          <Space
+            direction="vertical"
+            size="large"
+            className="flex items-center h-[170px]"
+          >
+            <Row>
+              <Image preview={false} src={suaChua} />
+            </Row>
+            <Row>
+              <Typography.Text className="text-base font-semibold text-[#154398] text-center">
+                Sang tên hợp đồng DVCN
+              </Typography.Text>
+            </Row>
+          </Space>
+        </Card>
+        <Card
+          className="rounded-none w-[188px] h-[220px] flex items-center justify-center cursor-pointer"
+          onClick={() => navigate("san-pham-va-dich-vu/dich-vu/sua-chua")}
+        >
+          <Space
+            direction="vertical"
+            size="large"
+            className="flex items-center h-[170px]"
+          >
+            <Row>
+              <Image preview={false} src={suaChua} />
+            </Row>
+            <Row>
+              <Typography.Text className="text-base font-semibold text-[#154398] text-center">
+                Cấp lại hợp đồng DVCN
+              </Typography.Text>
+            </Row>
+          </Space>
+        </Card>
+      </Carousel>
+    </div>
   );
 };
 

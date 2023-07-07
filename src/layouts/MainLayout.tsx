@@ -1,43 +1,50 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Image, Layout, Menu, Divider } from "antd";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useNavigate, useLocation } from "react-router-dom";
 import ContentLayout from "./ContentLayout";
 import "./index.css";
 import logo from "../images/larger-image-1664556056-LOGO Cap Nuoc 5-3 1.png";
 import TopBar from "./TopBar";
-import { ShoppingCartOutlined, SearchOutlined } from "@ant-design/icons";
+
 import FooterContent from "./FooterContent";
+import ContentFullWidth from "./ContentFullWidth";
 
 const { Header, Content, Footer } = Layout;
 
 function MainLayout() {
   const navigate = useNavigate();
+  const location = useLocation();
 
   return (
-    <Layout className="min-h-screen m-auto bg-white px-56">
+    <Layout className="min-h-screen m-auto bg-white">
       <TopBar />
-      <Divider className="px-[50px]" />
-      <Header className="flex items-center justify-between bg-white border-b-[1px] z-1000 sticky top-0 z-10 ">
+      <Divider className="mb-1" />
+      <Header className="flex items-center justify-between bg-white border-b-[1px] z-1000 sticky top-0 z-10 px-72 ">
         <Link
           to="/"
-          className="flex items-center gap-3 text-base font-bold text-sky-800"
+          className="flex items-center gap-3 text-base font-bold text-[#154398]"
         >
           <Image src={logo} preview={false} />
           CÔNG TY CỔ PHẦN <br />
           CẤP NƯỚC HẢI PHÒNG
         </Link>
-        <Menu mode="horizontal" defaultSelectedKeys={["1"]} disabledOverflow>
-          <Menu.Item className=" text-base font-semibold pr-[10px] pb-[25px] pl-[10px]">
+        <Menu
+          mode="horizontal"
+          defaultSelectedKeys={["1"]}
+          disabledOverflow
+          className=" h-[65px]"
+        >
+          <Menu.Item className="font-bold ">
             <Link to="/">
               <FontAwesomeIcon
                 icon={["fas", "house"]}
-                className="text-sky-800"
+                className="text-[#154398]"
               />
             </Link>
           </Menu.Item>
           <Menu.SubMenu
             title="Giới thiệu"
-            className=" text-base font-semibold text-sky-800 pr-[10px] pb-[25px] pl-[10px]"
+            className="font-bold text-[#154398] "
           >
             <Menu.SubMenu title="Về cấp nước Hải Phòng">
               <Menu.Item
@@ -99,7 +106,7 @@ function MainLayout() {
           </Menu.SubMenu>
           <Menu.SubMenu
             title="Sản phẩm và dịch vụ"
-            className=" text-base font-semibold text-sky-800 pr-[10px] pb-[25px] pl-[10px]"
+            className="font-bold text-[#154398] "
           >
             <Menu.SubMenu title="Sản phẩm">
               <Menu.Item
@@ -170,7 +177,7 @@ function MainLayout() {
           </Menu.SubMenu>
           <Menu.SubMenu
             title="Chăm sóc khách hàng"
-            className=" text-base font-semibold text-sky-800 pr-[10px] pb-[25px] pl-[10px]"
+            className="font-bold text-[#154398] "
           >
             <Menu.Item
               onClick={() => {
@@ -248,10 +255,7 @@ function MainLayout() {
               Chính sách bảo mật
             </Menu.Item>
           </Menu.SubMenu>
-          <Menu.SubMenu
-            title="Cổ đông"
-            className=" text-base font-semibold text-sky-800 pr-[10px] pb-[25px] pl-[10px]"
-          >
+          <Menu.SubMenu title="Cổ đông" className="font-bold text-[#154398] ">
             <Menu.Item
               onClick={() => {
                 navigate("/co-dong/bao-cao-tai-chinh");
@@ -288,10 +292,7 @@ function MainLayout() {
               Đại hội cổ đông thường niên
             </Menu.Item>
           </Menu.SubMenu>
-          <Menu.SubMenu
-            title="Tin tức"
-            className=" text-base font-semibold text-sky-800 pr-[10px] pb-[25px] pl-[10px]"
-          >
+          <Menu.SubMenu title="Tin tức" className="font-bold text-[#154398] ">
             <Menu.Item
               onClick={() => {
                 navigate("tin-tuc/hoat-dong-san-xuat-kinh-doanh");
@@ -315,30 +316,29 @@ function MainLayout() {
             </Menu.Item>
           </Menu.SubMenu>
           <Menu.Item
-            className=" text-base font-semibold text-sky-800 pr-[10px] pb-[25px] pl-[10px]"
+            className="font-bold text-[#154398] "
             onClick={() => navigate("/chat-luong-nuoc")}
           >
             Chất lượng nước
           </Menu.Item>
           <Menu.Item
-            className=" text-base font-semibold text-sky-800 pr-[10px] pb-[25px] pl-[10px]"
+            className="font-bold text-[#154398] "
             onClick={() => navigate("/lien-he")}
           >
             Liên hệ
           </Menu.Item>
-          <Menu.Item className=" text-base font-bold text-sky-800 pr-[10px] pb-[25px] pl-[10px]">
-            <SearchOutlined className="text-xl font-bold" />
-          </Menu.Item>
-          <Menu.Item className=" text-base font-bold text-sky-800 pr-[10px] pb-[25px] pl-[10px]">
-            <ShoppingCartOutlined className="text-xl font-bold" />
-          </Menu.Item>
         </Menu>
       </Header>
       <Content className="bg-white">
-        <ContentLayout />
+        {location.pathname === "/" ||
+        location.pathname.includes("/gioi-thieu/") ? (
+          <ContentFullWidth />
+        ) : (
+          <ContentLayout />
+        )}
       </Content>
       <Divider />
-      <Footer className="bg-white">
+      <Footer className="bg-white px-72">
         <FooterContent />
       </Footer>
     </Layout>

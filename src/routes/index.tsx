@@ -1,6 +1,7 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "react-toastify/dist/ReactToastify.css";
 import ContentLayout from "../layouts/ContentLayout";
+import ContentFullWidth from "../layouts/ContentFullWidth";
 import MainLayout from "../layouts/MainLayout";
 import Home from "../pages/Home/Home";
 import ThuNgo from "../pages/About/VeCapNuocHaiPhong/ThuNgo";
@@ -54,10 +55,10 @@ function Router() {
       <BrowserRouter>
         <Routes>
           <Route element={<MainLayout />}>
-            <Route path="" element={<ContentLayout />}>
+            <Route path="" element={<ContentFullWidth />}>
               <Route path="" element={<Home />} />
             </Route>
-            <Route path="gioi-thieu" element={<ContentLayout />}>
+            <Route path="gioi-thieu" element={<ContentFullWidth />}>
               <Route
                 path="ve-cap-nuoc-hai-phong/thu-ngo"
                 element={<ThuNgo />}
